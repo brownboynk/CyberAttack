@@ -1,0 +1,16 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/piece.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Pieces/bow1.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Pieces/bow5.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Pieces/bow4.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Pieces/bow6.png" type="Texture" id=5]
+
+[node name="yellow_piece" instance=ExtResource( 1 )]
+color = "yellow"
+row_texture = ExtResource( 3 )
+col_texture = ExtResource( 4 )
+adjacent_texture = ExtResource( 5 )
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource( 2 )

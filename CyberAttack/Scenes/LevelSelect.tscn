@@ -1,0 +1,170 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/LevelSelect.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Images/mainmenu3.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/LevelButton.tscn" type="PackedScene" id=3]
+
+[node name="LevelSelect" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_top = -8.0
+margin_right = 582.0
+margin_bottom = 1036.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="LevelButton" parent="." instance=ExtResource( 3 )]
+margin_left = 41.0
+margin_top = 953.0
+margin_right = -486.5
+margin_bottom = -22.5004
+level_number = 1
+
+[node name="LevelButton2" parent="." instance=ExtResource( 3 )]
+margin_left = 273.0
+margin_top = 896.0
+margin_right = -254.5
+margin_bottom = -79.5005
+level_number = 2
+
+[node name="LevelButton3" parent="." instance=ExtResource( 3 )]
+margin_left = 29.0
+margin_top = 837.0
+margin_right = -498.5
+margin_bottom = -138.5
+level_number = 3
+
+[node name="LevelButton4" parent="." instance=ExtResource( 3 )]
+margin_left = 397.0
+margin_top = 826.0
+margin_right = -130.5
+margin_bottom = -149.5
+level_number = 4
+
+[node name="LevelButton5" parent="." instance=ExtResource( 3 )]
+margin_left = 513.0
+margin_top = 638.0
+margin_right = -14.4998
+margin_bottom = -337.5
+level_number = 5
+
+[node name="LevelButton6" parent="." instance=ExtResource( 3 )]
+margin_left = 76.0
+margin_top = 737.0
+margin_right = -451.5
+margin_bottom = -238.5
+level_number = 6
+
+[node name="LevelButton7" parent="." instance=ExtResource( 3 )]
+margin_left = 134.0
+margin_top = 662.0
+margin_right = -393.5
+margin_bottom = -313.5
+level_number = 7
+
+[node name="LevelButton8" parent="." instance=ExtResource( 3 )]
+margin_left = 339.0
+margin_top = 536.0
+margin_right = -188.5
+margin_bottom = -439.5
+level_number = 8
+
+[node name="LevelButton9" parent="." instance=ExtResource( 3 )]
+margin_left = 515.0
+margin_top = 514.0
+margin_right = -12.5004
+margin_bottom = -461.5
+level_number = 9
+
+[node name="LevelButton10" parent="." instance=ExtResource( 3 )]
+margin_left = 404.0
+margin_top = 451.0
+margin_right = -123.5
+margin_bottom = -524.5
+level_number = 10
+
+[node name="LevelButton11" parent="." instance=ExtResource( 3 )]
+margin_left = 29.0
+margin_top = 375.0
+margin_right = -498.499
+margin_bottom = -600.5
+level_number = 11
+
+[node name="LevelButton12" parent="." instance=ExtResource( 3 )]
+margin_left = 315.0
+margin_top = 351.0
+margin_right = -212.5
+margin_bottom = -624.5
+level_number = 12
+
+[node name="LevelButton13" parent="." instance=ExtResource( 3 )]
+margin_left = 522.0
+margin_top = 390.0
+margin_right = -5.49994
+margin_bottom = -585.5
+level_number = 13
+
+[node name="LevelButton14" parent="." instance=ExtResource( 3 )]
+margin_left = 412.535
+margin_top = 190.401
+margin_right = -114.965
+margin_bottom = -785.099
+level_number = 14
+
+[node name="LevelButton15" parent="." instance=ExtResource( 3 )]
+margin_left = 444.269
+margin_top = 86.8494
+margin_right = -83.2311
+margin_bottom = -888.651
+level_number = 15
+
+[node name="LevelButton16" parent="." instance=ExtResource( 3 )]
+margin_left = 360.76
+margin_top = 33.4035
+margin_right = -166.74
+margin_bottom = -942.097
+level_number = 16
+
+[node name="LevelButton17" parent="." instance=ExtResource( 3 )]
+margin_left = 110.232
+margin_top = 23.3824
+margin_right = -417.268
+margin_bottom = -952.118
+level_number = 17
+
+[node name="LevelButton18" parent="." instance=ExtResource( 3 )]
+margin_left = 178.71
+margin_top = 126.934
+margin_right = -348.79
+margin_bottom = -848.566
+level_number = 18
+
+[node name="LevelButton19" parent="." instance=ExtResource( 3 )]
+margin_left = 205.433
+margin_top = 212.113
+margin_right = -322.067
+margin_bottom = -763.387
+level_number = 19
+
+[connection signal="level_selected" from="LevelButton" to="." method="_on_LevelButton_level_selected"]
+[connection signal="level_selected" from="LevelButton2" to="." method="_on_LevelButton_level_selected"]
+[connection signal="level_selected" from="LevelButton3" to="." method="_on_LevelButton_level_selected"]
+[connection signal="level_selected" from="LevelButton4" to="." method="_on_LevelButton_level_selected"]
+[connection signal="level_selected" from="LevelButton5" to="." method="_on_LevelButton_level_selected"]
+[connection signal="level_selected" from="LevelButton6" to="." method="_on_LevelButton_level_selected"]
+[connection signal="level_selected" from="LevelButton7" to="." method="_on_LevelButton_level_selected"]
+[connection signal="level_selected" from="LevelButton8" to="." method="_on_LevelButton_level_selected"]
+[connection signal="level_selected" from="LevelButton9" to="." method="_on_LevelButton_level_selected"]
+[connection signal="level_selected" from="LevelButton10" to="." method="_on_LevelButton_level_selected"]
+[connection signal="level_selected" from="LevelButton11" to="." method="_on_LevelButton_level_selected"]
+[connection signal="level_selected" from="LevelButton12" to="." method="_on_LevelButton_level_selected"]
+[connection signal="level_selected" from="LevelButton13" to="." method="_on_LevelButton_level_selected"]
+[connection signal="level_selected" from="LevelButton14" to="." method="_on_LevelButton_level_selected"]
+[connection signal="level_selected" from="LevelButton15" to="." method="_on_LevelButton_level_selected"]
+[connection signal="level_selected" from="LevelButton16" to="." method="_on_LevelButton_level_selected"]
+[connection signal="level_selected" from="LevelButton17" to="." method="_on_LevelButton_level_selected"]
+[connection signal="level_selected" from="LevelButton18" to="." method="_on_LevelButton_level_selected"]
+[connection signal="level_selected" from="LevelButton19" to="." method="_on_LevelButton_level_selected"]
